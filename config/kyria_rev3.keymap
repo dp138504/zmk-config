@@ -118,7 +118,7 @@
                                          &trans       &trans        &trans       &trans &trans      &trans &trans &trans &trans &rgb_ug RGB_TOG
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &rbg_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &rgb_encoder>;
         };
     };
 };
