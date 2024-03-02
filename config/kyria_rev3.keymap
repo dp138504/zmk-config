@@ -23,6 +23,15 @@
 };
 
 / {
+
+    behaviors {
+      rgb_encoder: rgb_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+      };
+    };
+
     conditional_layers {
       compatible = "zmk,conditional-layers";
       adjust_layer {
@@ -105,10 +114,10 @@
             &trans &to QWERTY &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2                &trans &trans &trans &trans &trans &trans
             &trans &trans     &trans     &bt BT_SEL 3 &to DEFAULT  &trans                      &trans &trans &trans &trans &trans &trans
             &trans &trans     &trans &trans &trans &trans &trans   &trans        &trans &trans &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans &trans   &trans        &trans &trans &trans &trans &trans
+                                     &trans &trans &trans &trans   &trans        &trans &trans &trans &trans &rgb_ug RGB_TOG
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &rbg_encoder>;
         };
     };
 };
