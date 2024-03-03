@@ -23,6 +23,18 @@
     chain-length = <31>; // Uncomment if using both per-key and underglow LEDs
 };
 
+&sensors {
+  triggers-per-rotation = <36>;
+};
+
+&left_encoder {
+  steps = <144>;
+};
+
+&right_encoder {
+  steps = <144>;
+};
+
 / {
 
     behaviors {
