@@ -58,10 +58,10 @@
             //                     |PLAPSE| DEL  | RET  |  SPACE  | LOWER |    | RCTRL |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&gresc     &kp Q  &kp W  &kp F     &kp P      &kp B                                         &kp J    &kp L     &kp U      &kp Y    &kp SEMI  &kp BSPC
-&kp TAB    &kp A  &kp R  &kp S     &lt 5 T    &kp G                                         &kp M    &kp N     &kp E      &kp I    &kp O     &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp D      &kp V     &kp LSHFT  &none  &none  &kp LSHFT  &kp K    &kp H     &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RET
-                         &kp C_PP  &kp LCTRL  &kp LGUI  &mo 5      &mo 2  &mo 3  &kp SPACE  &kp TAB  &kp BSPC  &kp RALT
+&gresc     &kp Q  &kp W  &kp F     &kp P      &kp B                                        &kp J    &kp L     &kp U      &kp Y    &kp SEMI  &kp BSPC
+&kp TAB    &kp A  &kp R  &kp S     &lt 5 T    &kp G                                        &kp M    &kp N     &kp E      &kp I    &kp O     &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp D      &kp V     &kp CAPS  &none  &none  &kp LSHFT  &kp K    &kp H     &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RET
+                         &kp C_PP  &kp LCTRL  &kp LGUI  &mo 5     &mo 2  &mo 3  &kp SPACE  &kp TAB  &kp BSPC  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -75,10 +75,10 @@
             //                     |PLAPSE| DEL  | RET  |  SPACE  | LOWER |    |  RCTRL  |  SPACE  | TAB  | BSPC  | R-ALT |
 
             bindings = <
-&gresc     &kp Q  &kp W  &kp E     &kp R      &kp T                                         &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSPC
-&kp TAB    &kp A  &kp S  &kp D     &lt 5 F    &kp G                                         &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B     &kp LSHFT  &none  &none  &kp LSHFT  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RET
-                         &kp C_PP  &kp LCTRL  &kp LGUI  &mo 5      &mo 2  &mo 3  &kp SPACE  &kp TAB  &kp BSPC  &kp RALT
+&gresc     &kp Q  &kp W  &kp E     &kp R      &kp T                                        &kp Y    &kp U     &kp I      &kp O    &kp P     &kp BSPC
+&kp TAB    &kp A  &kp S  &kp D     &lt 5 F    &kp G                                        &kp H    &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V      &kp B     &kp CAPS  &none  &none  &kp LSHFT  &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &mt RSHFT RET
+                         &kp C_PP  &kp LCTRL  &kp LGUI  &mo 5     &mo 2  &mo 3  &kp SPACE  &kp TAB  &kp BSPC  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -139,10 +139,10 @@
 
         NAVIGATION {
             bindings = <
-&none  &none  &none  &none  &none  &none                              &none  &none     &none     &none   &none      &none
-&none  &none  &none  &none  &none  &none                              &none  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none
-&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none     &none     &none   &none      &none
-                     &none  &none  &none  &none  &none  &none  &none  &none  &none     &none
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans    &trans    &trans    &trans  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans                                  &kp HOME  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
             >;
         };
     };
